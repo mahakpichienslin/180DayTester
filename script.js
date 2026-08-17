@@ -164,15 +164,15 @@ const questions = [
 
   {
   spokenText:
-    "Can I get a copy of the receipt?",
+    "Sorry, we're out of chicken today. Would beef be okay?",
 
   maxPlays: 1,
 
   answers: [
-    "ฉันขอกาแฟเพิ่มได้ไหม",
-    "ฉันขอสำเนาใบเสร็จได้ไหม",
-    "ฉันขอเปลี่ยนโต๊ะได้ไหม",
-    "ฉันขอกาแฟร้อนได้ไหม"
+    "Yes, I'd like some chicken.",
+    "Sure, beef is fine.",
+    "I don't eat breakfast.",
+    "That's too expensive."
   ],
 
   correct: 1
@@ -185,15 +185,15 @@ const questions = [
 
   {
   spokenText:
-    "That will be fifteen dollars.",
+    "Would you mind taking a picture for us?",
 
   maxPlays: 1,
 
   answers: [
-    "50 ดอลลาร์",
-    "55 ดอลลาร์",
-    "15 ดอลลาร์",
-    "5 ดอลลาร์"
+    "I don't like pictures.",
+    "I didn't bring my phone.",
+    "Of course.",
+    "Let's go somewhere else."
   ],
 
   correct: 2
@@ -206,15 +206,15 @@ const questions = [
 
   {
   spokenText:
-    "I don't want coffee, I'll have tea instead.",
+    "Could you keep an eye on my bag for a minute?",
 
   maxPlays: 1,
 
   answers: [
-    "ฉันอยากได้กาแฟ ไม่เอาชา",
-    "ฉันไม่เอาชา ขอกาแฟแทน",
-    "ฉันไม่เอากาแฟ ขอชาแทน",
-    "ฉันเอาทั้งกาแฟและชา"
+    "That's a nice bag.",
+    "I need a new bag.",
+    "Sure, no problem.",
+    "Where did you buy it?"
   ],
 
   correct: 2
@@ -228,15 +228,15 @@ const questions = [
 
    {
   spokenText:
-    "Excuse me, could you turn down the music a little?",
+    "I'm sorry, but this isn't what I ordered.",
 
   maxPlays: 1,
 
   answers: [
-    "ขอเปิดเพลงดังขึ้นหน่อยได้ไหม",
-    "ขอเปลี่ยนเพลงได้ไหม",
-    "ขอลดเสียงเพลงลงหน่อยได้ไหม",
-    "ขอปิดเพลงได้ไหม"
+    "I ordered it yesterday.",
+    "Thank you for your order.",
+    "I'm sorry. I'll check it for you.",
+    "Yes, that's your order."
   ],
 
   correct: 2
@@ -249,15 +249,15 @@ const questions = [
 
    {
   spokenText:
-    "The meeting starts at half past three, not three.",
+    "Would it be possible to move to another table?",
 
   maxPlays: 1,
 
   answers: [
-    "ประชุมเริ่ม 3 โมงตรง",
-    "ประชุมเริ่ม 3 โมงครึ่ง",
-    "ประชุมเริ่ม 3 โมง 15",
-    "ประชุมเลื่อนเป็นพรุ่งนี้"
+    "This table is expensive.",
+    "Let me see what's available.",
+    "I don't like tables.",
+    "I'm waiting for someone."
   ],
 
   correct: 1
@@ -270,15 +270,15 @@ const questions = [
 
   {
   spokenText:
-    "I ordered a small coffee, not a large one.",
+    "The next train has been delayed by twenty minutes.",
 
   maxPlays: 1,
 
   answers: [
-    "ฉันสั่งกาแฟแก้วใหญ่",
-    "ฉันสั่งกาแฟแก้วเล็ก",
-    "ฉันสั่งกาแฟสองแก้ว",
-    "ฉันไม่ได้สั่งกาแฟ"
+    "I don't like trains.",
+    "Okay, I'll wait.",
+    "I arrived twenty minutes ago.",
+    "I missed the station."
   ],
 
   correct: 1
@@ -291,15 +291,15 @@ const questions = [
 
   {
   spokenText:
-    "Sorry, we're out of milk, but we do have cream.",
+    "We're fully booked tonight, but we do have a table available tomorrow.",
 
   maxPlays: 1,
 
   answers: [
-    "นมหมดแล้ว มีแต่ครีม",
-    "ครีมหมดแล้ว มีแต่นม",
-    "ทั้งนมและครีมหมด",
-    "มีทั้งนมและครีม"
+    "Tomorrow works for me.",
+    "Great, I'll sit here tonight.",
+    "I already finished eating.",
+    "I'd like to pay now."
   ],
 
   correct: 0
