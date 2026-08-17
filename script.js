@@ -18,15 +18,15 @@ const questions = [
 
   {
   spokenText:
-    "Could I have a cup of coffee, please?",
+    "Would you like your coffee hot or iced?",
 
   maxPlays: 2,
 
   answers: [
-    "ฉันขอกาแฟหนึ่งแก้วได้ไหม",
-    "ฉันขอชาหนึ่งแก้วได้ไหม",
-    "ฉันขอน้ำหนึ่งแก้วได้ไหม",
-    "ฉันขอนมหนึ่งแก้วได้ไหม"
+    "Iced, please.",
+    "Yes, I like coffee.",
+    "It's very hot.",
+    "Thank you very much."
   ],
 
   correct: 0
@@ -39,18 +39,18 @@ const questions = [
 
   {
   spokenText:
-    "Can I see the menu, please?",
+    "Would you like a bag for that?",
 
   maxPlays: 2,
 
   answers: [
-    "ฉันขอดูใบเสร็จได้ไหม",
-    "ฉันขอเมนูอาหารได้ไหม",
-    "ฉันขอดูราคาได้ไหม",
-    "ฉันขอโต๊ะได้ไหม"
+    "I'm looking for my bag.",
+    "Yes, I like this bag.",
+    "How much is the coffee?",
+    "No, thanks. I can carry it."
   ],
 
-  correct: 1
+  correct: 3
 },
 
 
@@ -60,18 +60,18 @@ const questions = [
 
   {
   spokenText:
-    "I would like to pay now.",
+    "Cash or card?",
 
   maxPlays: 2,
 
   answers: [
-    "ฉันต้องการสั่งอาหารเพิ่ม",
-    "ฉันต้องการยกเลิกออเดอร์",
-    "ฉันต้องการจ่ายเงิน",
-    "ฉันต้องการใบเสร็จ"
+    "Card, please.",
+    "Twenty dollars.",
+    "I don't need any cash.",
+    "Yes, I have a card."
   ],
 
-  correct: 2
+  correct: 0
 },
 
 
@@ -81,18 +81,18 @@ const questions = [
 
  {
   spokenText:
-    "I'm looking for a coffee shop.",
+    "Would you like anything else?",
 
   maxPlays: 2,
 
   answers: [
-    "ฉันกำลังมองหาร้านกาแฟ",
-    "ฉันกำลังมองหาร้านอาหาร",
-    "ฉันกำลังมองหาห้องน้ำ",
-    "ฉันกำลังมองหาที่จอดรถ"
+    "Yes, it's delicious.",
+    "No, that's all, thank you.",
+    "I already ate.",
+    "It's over there."
   ],
 
-  correct: 0
+  correct: 1
 },
 
 
@@ -102,15 +102,15 @@ const questions = [
 
   {
   spokenText:
-    "What time do you open?",
+    "For here or to go?",
 
   maxPlays: 2,
 
   answers: [
-    "ปิดกี่โมง",
-    "เปิดกี่โมง",
-    "วันนี้เปิดไหม",
-    "พรุ่งนี้เปิดกี่โมง"
+    "I'm going home.",
+    "To go, please",
+    "I don't know where to go.",
+    "Yes, let's go."
   ],
 
   correct: 1
@@ -123,15 +123,15 @@ const questions = [
 
   {
   spokenText:
-    "This tastes really good.",
+    "Do you want it spicy?",
 
   maxPlays: 2,
 
   answers: [
-    "อันนี้ราคาแพงมาก",
-    "อันนี้ร้อนมาก",
-    "อันนี้อร่อยมาก",
-    "อันนี้เย็นมาก"
+    "I don't like this restaurant.",
+    "Yes, it's very expensive.",
+    "Just a little, please.",
+    "It's too late."
   ],
 
   correct: 2
@@ -143,15 +143,15 @@ const questions = [
 
   {
   spokenText:
-    "Where is the bathroom?",
+    "Could you move over a little?",
 
   maxPlays: 2,
 
   answers: [
-    "ห้องน้ำอยู่ตรงไหน",
-    "ทางออกอยู่ตรงไหน",
-    "ครัวอยู่ตรงไหน",
-    "โต๊ะของฉันอยู่ตรงไหน"
+    "Sure.",
+    "I'm moving tomorrow.",
+    "I don't live here.",
+    "I need a taxi."
   ],
 
   correct: 0
