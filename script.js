@@ -365,7 +365,7 @@ const questions = [
     "ขอให้ช่วยถือกระเป๋าไปด้วย"
   ],
 
-  correct: 1
+  correct: 0
 },
 
 
