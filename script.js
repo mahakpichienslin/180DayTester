@@ -1038,38 +1038,4 @@ document
   );
 
 
-      // =====================================
-      // ตอนนี้แสดงใน Console ก่อน
-      // ต่อไปเราจะเปลี่ยนตรงนี้
-      // ให้ส่งเข้า Google Sheet
-      // =====================================
-
-      console.log(
-        "180 DAY TEST RESULT"
-      );
-
-      console.log(result);
-
-
-      // เก็บสำรองใน Browser
-
-      localStorage.setItem(
-        "180DayTestResult",
-        JSON.stringify(result)
-      );
-
-
-      document
-        .getElementById(
-          "hiddenResult"
-        )
-        .textContent =
-        `${score}/${questions.length}`;
-
-
-      showScreen(
-        thankYouScreen
-      );
-
-    }
-  );
+     
