@@ -38,23 +38,20 @@ const questions = [
   // =========================
 
   {
-    spokenText:
-      "Where is the nearest train station?",
+  spokenText:
+    "Can I see the menu, please?",
 
-    audio:
-      "audio/q02.mp3",
+  maxPlays: 2,
 
-    maxPlays: 2,
+  answers: [
+    "ฉันขอดูใบเสร็จได้ไหม",
+    "ฉันขอเมนูอาหารได้ไหม",
+    "ฉันขอดูราคาได้ไหม",
+    "ฉันขอโต๊ะได้ไหม"
+  ],
 
-    answers: [
-      "สถานีรถไฟที่ใกล้ที่สุดอยู่ที่ไหน",
-      "รถไฟจะมาถึงเมื่อไร",
-      "ฉันสามารถซื้อตั๋วได้ที่ไหน",
-      "รถไฟขบวนนี้ไปสนามบินไหม"
-    ],
-
-    correct: 0
-  },
+  correct: 1
+},
 
 
   // =========================
@@ -62,47 +59,41 @@ const questions = [
   // =========================
 
   {
-    spokenText:
-      "What time do you finish work?",
+  spokenText:
+    "I would like to pay now.",
 
-    audio:
-      "audio/q03.mp3",
+  maxPlays: 2,
 
-    maxPlays: 2,
+  answers: [
+    "ฉันต้องการสั่งอาหารเพิ่ม",
+    "ฉันต้องการยกเลิกออเดอร์",
+    "ฉันต้องการจ่ายเงิน",
+    "ฉันต้องการใบเสร็จ"
+  ],
 
-    answers: [
-      "คุณเลิกงานกี่โมง",
-      "คุณเริ่มงานกี่โมง",
-      "วันนี้คุณทำงานไหม",
-      "คุณทำงานที่ไหน"
-    ],
-
-    correct: 0
-  },
+  correct: 2
+},
 
 
   // =========================
   // 04
   // =========================
 
-  {
-    spokenText:
-      "Can you help me carry this bag?",
+ {
+  spokenText:
+    "I'm looking for a coffee shop.",
 
-    audio:
-      "audio/q04.mp3",
+  maxPlays: 2,
 
-    maxPlays: 2,
+  answers: [
+    "ฉันกำลังมองหาร้านกาแฟ",
+    "ฉันกำลังมองหาร้านอาหาร",
+    "ฉันกำลังมองหาห้องน้ำ",
+    "ฉันกำลังมองหาที่จอดรถ"
+  ],
 
-    answers: [
-      "คุณช่วยฉันถือกระเป๋าใบนี้ได้ไหม",
-      "คุณเห็นกระเป๋าของฉันไหม",
-      "คุณช่วยเปิดกระเป๋าให้ฉันได้ไหม",
-      "กระเป๋าใบนี้ราคาเท่าไร"
-    ],
-
-    correct: 0
-  },
+  correct: 0
+},
 
 
   // =========================
@@ -110,23 +101,20 @@ const questions = [
   // =========================
 
   {
-    spokenText:
-      "I'm looking for the bathroom.",
+  spokenText:
+    "What time do you open?",
 
-    audio:
-      "audio/q05.mp3",
+  maxPlays: 2,
 
-    maxPlays: 2,
+  answers: [
+    "ปิดกี่โมง",
+    "เปิดกี่โมง",
+    "วันนี้เปิดไหม",
+    "พรุ่งนี้เปิดกี่โมง"
+  ],
 
-    answers: [
-      "ฉันกำลังมองหาห้องน้ำ",
-      "ฉันกำลังทำความสะอาดห้องน้ำ",
-      "ฉันกำลังรออยู่หน้าห้อง",
-      "ฉันต้องการเปลี่ยนห้องพัก"
-    ],
-
-    correct: 0
-  },
+  correct: 1
+},
 
 
   // =========================
@@ -134,47 +122,40 @@ const questions = [
   // =========================
 
   {
-    spokenText:
-      "Could you speak more slowly, please?",
+  spokenText:
+    "This tastes really good.",
 
-    audio:
-      "audio/q06.mp3",
+  maxPlays: 2,
 
-    maxPlays: 2,
+  answers: [
+    "อันนี้ราคาแพงมาก",
+    "อันนี้ร้อนมาก",
+    "อันนี้อร่อยมาก",
+    "อันนี้เย็นมาก"
+  ],
 
-    answers: [
-      "คุณช่วยพูดช้าลงหน่อยได้ไหม",
-      "คุณช่วยพูดให้ดังขึ้นได้ไหม",
-      "คุณช่วยเขียนให้ฉันได้ไหม",
-      "คุณช่วยพูดอีกภาษาได้ไหม"
-    ],
-
-    correct: 0
-  },
-
+  correct: 2
+},
 
   // =========================
   // 07
   // =========================
 
   {
-    spokenText:
-      "I'd like to buy a ticket for tomorrow morning.",
+  spokenText:
+    "Where is the bathroom?",
 
-    audio:
-      "audio/q07.mp3",
+  maxPlays: 2,
 
-    maxPlays: 2,
+  answers: [
+    "ห้องน้ำอยู่ตรงไหน",
+    "ทางออกอยู่ตรงไหน",
+    "ครัวอยู่ตรงไหน",
+    "โต๊ะของฉันอยู่ตรงไหน"
+  ],
 
-    answers: [
-      "ฉันต้องการซื้อตั๋วสำหรับพรุ่งนี้ตอนเช้า",
-      "ฉันต้องการยกเลิกตั๋วของวันนี้",
-      "ฉันต้องการเดินทางคืนนี้",
-      "ฉันต้องการเปลี่ยนที่นั่ง"
-    ],
-
-    correct: 0
-  },
+  correct: 0
+},
 
 
   // =========================
@@ -182,23 +163,20 @@ const questions = [
   // =========================
 
   {
-    spokenText:
-      "Do you have this shirt in a larger size?",
+  spokenText:
+    "Can I get a copy of the receipt?",
 
-    audio:
-      "audio/q08.mp3",
+  maxPlays: 1,
 
-    maxPlays: 2,
+  answers: [
+    "ฉันขอกาแฟเพิ่มได้ไหม",
+    "ฉันขอสำเนาใบเสร็จได้ไหม",
+    "ฉันขอเปลี่ยนโต๊ะได้ไหม",
+    "ฉันขอกาแฟร้อนได้ไหม"
+  ],
 
-    answers: [
-      "คุณมีเสื้อตัวนี้ไซซ์ใหญ่กว่านี้ไหม",
-      "คุณมีเสื้อตัวนี้สีอื่นไหม",
-      "เสื้อตัวนี้ลดราคาไหม",
-      "ฉันสามารถลองเสื้อตัวนี้ได้ไหม"
-    ],
-
-    correct: 0
-  },
+  correct: 1
+},
 
 
   // =========================
@@ -206,23 +184,20 @@ const questions = [
   // =========================
 
   {
-    spokenText:
-      "I'm sorry, I don't understand what you mean.",
+  spokenText:
+    "That will be fifteen dollars.",
 
-    audio:
-      "audio/q09.mp3",
+  maxPlays: 1,
 
-    maxPlays: 2,
+  answers: [
+    "50 ดอลลาร์",
+    "55 ดอลลาร์",
+    "15 ดอลลาร์",
+    "5 ดอลลาร์"
+  ],
 
-    answers: [
-      "ขอโทษ ฉันไม่เข้าใจว่าคุณหมายถึงอะไร",
-      "ขอโทษ ฉันไม่ได้ยินที่คุณพูด",
-      "ขอโทษ ฉันจำชื่อคุณไม่ได้",
-      "ขอโทษ ฉันไม่สามารถช่วยคุณได้"
-    ],
-
-    correct: 0
-  },
+  correct: 2
+},
 
 
   // =========================
@@ -230,71 +205,63 @@ const questions = [
   // =========================
 
   {
-    spokenText:
-      "Could you tell me where the nearest pharmacy is?",
+  spokenText:
+    "I don't want coffee, I'll have tea instead.",
 
-    audio:
-      "audio/q10.mp3",
+  maxPlays: 1,
 
-    maxPlays: 2,
+  answers: [
+    "ฉันอยากได้กาแฟ ไม่เอาชา",
+    "ฉันไม่เอาชา ขอกาแฟแทน",
+    "ฉันไม่เอากาแฟ ขอชาแทน",
+    "ฉันเอาทั้งกาแฟและชา"
+  ],
 
-    answers: [
-      "คุณช่วยบอกได้ไหมว่าร้านขายยาที่ใกล้ที่สุดอยู่ที่ไหน",
-      "คุณช่วยบอกได้ไหมว่าโรงพยาบาลที่ใกล้ที่สุดอยู่ที่ไหน",
-      "คุณช่วยซื้อยาให้ฉันได้ไหม",
-      "คุณช่วยพาฉันไปพบหมอได้ไหม"
-    ],
+  correct: 2
+},
 
-    correct: 0
-  },
 
 
   // =========================
   // 11
   // =========================
 
-  {
-    spokenText:
-      "I usually take the bus to work, but today I drove.",
+   {
+  spokenText:
+    "Excuse me, could you turn down the music a little?",
 
-    audio:
-      "audio/q11.mp3",
+  maxPlays: 1,
 
-    maxPlays: 2,
+  answers: [
+    "ขอเปิดเพลงดังขึ้นหน่อยได้ไหม",
+    "ขอเปลี่ยนเพลงได้ไหม",
+    "ขอลดเสียงเพลงลงหน่อยได้ไหม",
+    "ขอปิดเพลงได้ไหม"
+  ],
 
-    answers: [
-      "ปกติผู้พูดขึ้นรถประจำทางไปทำงาน แต่วันนี้ขับรถ",
-      "ปกติผู้พูดขับรถไปทำงาน แต่วันนี้ขึ้นรถประจำทาง",
-      "วันนี้ผู้พูดไม่ได้ไปทำงาน",
-      "วันนี้ผู้พูดเดินไปทำงาน"
-    ],
-
-    correct: 0
-  },
+  correct: 2
+},
 
 
   // =========================
   // 12
   // =========================
 
-  {
-    spokenText:
-      "I'm meeting my friend at the restaurant after work.",
+   {
+  spokenText:
+    "The meeting starts at half past three, not three.",
 
-    audio:
-      "audio/q12.mp3",
+  maxPlays: 1,
 
-    maxPlays: 2,
+  answers: [
+    "ประชุมเริ่ม 3 โมงตรง",
+    "ประชุมเริ่ม 3 โมงครึ่ง",
+    "ประชุมเริ่ม 3 โมง 15",
+    "ประชุมเลื่อนเป็นพรุ่งนี้"
+  ],
 
-    answers: [
-      "ผู้พูดจะไปพบเพื่อนที่ร้านอาหารหลังเลิกงาน",
-      "ผู้พูดทำงานอยู่ที่ร้านอาหารกับเพื่อน",
-      "ผู้พูดจะกลับบ้านทันทีหลังเลิกงาน",
-      "ผู้พูดกำลังรอเพื่อนมารับที่ทำงาน"
-    ],
-
-    correct: 0
-  },
+  correct: 1
+},
 
 
   // =========================
@@ -302,23 +269,20 @@ const questions = [
   // =========================
 
   {
-    spokenText:
-      "The train is delayed, so we'll probably arrive late.",
+  spokenText:
+    "I ordered a small coffee, not a large one.",
 
-    audio:
-      "audio/q13.mp3",
+  maxPlays: 1,
 
-    maxPlays: 2,
+  answers: [
+    "ฉันสั่งกาแฟแก้วใหญ่",
+    "ฉันสั่งกาแฟแก้วเล็ก",
+    "ฉันสั่งกาแฟสองแก้ว",
+    "ฉันไม่ได้สั่งกาแฟ"
+  ],
 
-    answers: [
-      "รถไฟล่าช้า ดังนั้นพวกเขาน่าจะไปถึงช้า",
-      "รถไฟมาเร็ว ดังนั้นพวกเขาจะถึงก่อนเวลา",
-      "รถไฟถูกยกเลิกและพวกเขาจะไม่เดินทาง",
-      "พวกเขาขึ้นรถไฟผิดขบวน"
-    ],
-
-    correct: 0
-  },
+  correct: 1
+},
 
 
   // =========================
@@ -326,23 +290,20 @@ const questions = [
   // =========================
 
   {
-    spokenText:
-      "I haven't eaten anything since this morning, so I'm really hungry.",
+  spokenText:
+    "Sorry, we're out of milk, but we do have cream.",
 
-    audio:
-      "audio/q14.mp3",
+  maxPlays: 1,
 
-    maxPlays: 2,
+  answers: [
+    "นมหมดแล้ว มีแต่ครีม",
+    "ครีมหมดแล้ว มีแต่นม",
+    "ทั้งนมและครีมหมด",
+    "มีทั้งนมและครีม"
+  ],
 
-    answers: [
-      "ผู้พูดยังไม่ได้กินอะไรตั้งแต่เช้าจึงหิวมาก",
-      "ผู้พูดกินอาหารเช้ามากเกินไป",
-      "ผู้พูดกำลังทำอาหารเช้า",
-      "ผู้พูดไม่ต้องการกินอะไรในวันนี้"
-    ],
-
-    correct: 0
-  },
+  correct: 0
+},
 
 
   // =========================
@@ -350,47 +311,41 @@ const questions = [
   // =========================
 
   {
-    spokenText:
-      "I wanted to go for a walk, but it started raining, so I stayed home.",
+  spokenText:
+    "Could you point me to somewhere I could grab a quick bite?",
 
-    audio:
-      "audio/q15.mp3",
+  maxPlays: 1,
 
-    maxPlays: 2,
+  answers: [
+    "ถามทางไปห้องน้ำ",
+    "ถามทางไปร้านกาแฟ",
+    "ถามหาที่กินอาหารเร็วๆ",
+    "ถามหาที่นั่งพักผ่อน"
+  ],
 
-    answers: [
-      "ผู้พูดตั้งใจจะออกไปเดิน แต่ฝนตกจึงอยู่บ้าน",
-      "ผู้พูดออกไปเดินเล่นท่ามกลางฝน",
-      "ผู้พูดกลับบ้านหลังจากเดินเล่นเสร็จ",
-      "ผู้พูดรอให้ฝนหยุดแล้วออกไปข้างนอก"
-    ],
-
-    correct: 0
-  },
+  correct: 2
+},
 
 
   // =========================
   // 16
   // =========================
 
-  {
-    spokenText:
-      "My phone battery is almost dead. Do you know where I can charge it?",
+   {
+  spokenText:
+    "I'm afraid the kitchen's just closed, but the bar's still serving.",
 
-    audio:
-      "audio/q16.mp3",
+  maxPlays: 1,
 
-    maxPlays: 2,
+  answers: [
+    "ครัวปิดแล้ว แต่บาร์ยังเปิดขายอยู่",
+    "ครัวยังเปิดอยู่ แต่บาร์ปิดแล้ว",
+    "ทั้งครัวและบาร์ปิดแล้ว",
+    "ทั้งครัวและบาร์ยังเปิดอยู่"
+  ],
 
-    answers: [
-      "แบตโทรศัพท์ใกล้หมด และผู้พูดกำลังหาที่ชาร์จ",
-      "โทรศัพท์ของผู้พูดหาย",
-      "ผู้พูดกำลังจะซื้อโทรศัพท์เครื่องใหม่",
-      "โทรศัพท์ของผู้พูดไม่มีสัญญาณ"
-    ],
-
-    correct: 0
-  },
+  correct: 0
+},
 
 
   // =========================
@@ -398,23 +353,20 @@ const questions = [
   // =========================
 
   {
-    spokenText:
-      "I ordered a chicken sandwich, but they brought me a beef burger instead.",
+  spokenText:
+    "Would you mind keeping an eye on my bag while I use the restroom?",
 
-    audio:
-      "audio/q17.mp3",
+  maxPlays: 1,
 
-    maxPlays: 2,
+  answers: [
+    "ขอให้ช่วยเก็บกระเป๋าไว้",
+    "ขอให้ช่วยดูกระเป๋าให้แป๊บนึง",
+    "ขอให้ช่วยพาไปห้องน้ำ",
+    "ขอให้ช่วยถือกระเป๋าไปด้วย"
+  ],
 
-    answers: [
-      "ผู้พูดสั่งแซนด์วิชไก่ แต่ได้รับเบอร์เกอร์เนื้อแทน",
-      "ผู้พูดเปลี่ยนจากแซนด์วิชเป็นเบอร์เกอร์เอง",
-      "ร้านไม่มีทั้งแซนด์วิชและเบอร์เกอร์",
-      "ผู้พูดต้องการสั่งอาหารเพิ่ม"
-    ],
-
-    correct: 0
-  },
+  correct: 1
+},
 
 
   // =========================
@@ -422,23 +374,20 @@ const questions = [
   // =========================
 
   {
-    spokenText:
-      "I was supposed to meet Sarah at six, but she just texted me saying she'll be about thirty minutes late.",
+  spokenText:
+    "It's on the house — no charge for the coffee today.",
 
-    audio:
-      "audio/q18.mp3",
+  maxPlays: 1,
 
-    maxPlays: 2,
+  answers: [
+    "กาแฟวันนี้ลดราคาครึ่งหนึ่ง",
+    "กาแฟวันนี้ฟรี ไม่คิดเงิน",
+    "กาแฟวันนี้ต้องจ่ายเพิ่ม",
+    "กาแฟวันนี้ขายไม่ได้แล้ว"
+  ],
 
-    answers: [
-      "Sarah แจ้งว่าจะมาช้าประมาณสามสิบนาที",
-      "Sarah ต้องการเลื่อนนัดไปเป็นวันพรุ่งนี้",
-      "ผู้พูดเป็นฝ่ายไปสายประมาณสามสิบนาที",
-      "Sarah มาถึงก่อนเวลานัด"
-    ],
-
-    correct: 0
-  },
+  correct: 1
+},
 
 
   // =========================
@@ -446,48 +395,43 @@ const questions = [
   // =========================
 
   {
-    spokenText:
-      "I thought the store closed at nine, but when I got there, it had already closed at eight.",
+  spokenText:
+    "I hate to be a bother, but could we possibly get the check whenever you get a chance?",
 
-    audio:
-      "audio/q19.mp3",
+  maxPlays: 1,
 
-    maxPlays: 2,
+  answers: [
+    "ขอความช่วยเหลือเรื่องอื่น",
+    "ขอยกเลิกออเดอร์",
+    "ขอบิล/เช็คบิลแบบไม่รีบ",
+    "ขอเปลี่ยนโต๊ะแบบไม่รีบ"
+  ],
 
-    answers: [
-      "ผู้พูดคิดว่าร้านปิดสามทุ่ม แต่จริง ๆ ร้านปิดสองทุ่ม",
-      "ผู้พูดไปถึงร้านก่อนร้านเปิด",
-      "ร้านเปลี่ยนเวลาปิดจากสองทุ่มเป็นสามทุ่ม",
-      "ผู้พูดไปซื้อของเสร็จก่อนสองทุ่ม"
-    ],
+  correct: 2
+},
 
-    correct: 0
-  },
 
 
   // =========================
   // 20
   // =========================
 
-  {
-    spokenText:
-      "I was going to take the subway, but there was a problem with the line, so I decided to get a taxi instead.",
+   {
+  spokenText:
+    "Let's split the bill down the middle, shall we?",
 
-    audio:
-      "audio/q20.mp3",
+  maxPlays: 1,
 
-    maxPlays: 2,
+  answers: [
+    "ให้อีกฝ่ายจ่ายทั้งหมด",
+    "หารเงินค่าอาหารกันคนละครึ่ง",
+    "ขอส่วนลดครึ่งราคา",
+    "ยกเลิกบิลทั้งหมด"
+  ],
 
-    answers: [
-      "ผู้พูดตั้งใจขึ้นรถไฟใต้ดิน แต่มีปัญหาจึงเปลี่ยนไปนั่งแท็กซี่",
-      "ผู้พูดนั่งรถไฟใต้ดินเพราะแท็กซี่มีปัญหา",
-      "ผู้พูดรอรถไฟใต้ดินจนกลับมาให้บริการ",
-      "ผู้พูดตัดสินใจเดินไปแทนการใช้รถ"
-    ],
-
-    correct: 0
-  }
-
+  correct: 1
+}
+  
 ];
 
 
