@@ -305,132 +305,125 @@ const questions = [
   correct: 0
 },
 
-
+  
+// =========================
+  // 15 — Coffee shop
   // =========================
-  // 15
-  // =========================
-
   {
-  spokenText:
-    "Could you point me to somewhere I could grab a quick bite?",
+    spokenText:
+      "We're closing in about ten minutes.",
 
-  maxPlays: 1,
+    maxPlays: 1,
 
-  answers: [
-    "ถามทางไปห้องน้ำ",
-    "ถามทางไปร้านกาแฟ",
-    "ถามหาที่กินอาหารเร็วๆ",
-    "ถามหาที่นั่งพักผ่อน"
-  ],
+    answers: [
+      "Great, I'll order more coffee.",
+      "What time do you open?",
+      "I'll stay a little longer.",
+      "Okay, I'll finish up."
+    ],
 
-  correct: 2
-},
-
-
-  // =========================
-  // 16
-  // =========================
-
-   {
-  spokenText:
-    "I'm afraid the kitchen's just closed, but the bar's still serving.",
-
-  maxPlays: 1,
-
-  answers: [
-    "ครัวปิดแล้ว แต่บาร์ยังเปิดขายอยู่",
-    "ครัวยังเปิดอยู่ แต่บาร์ปิดแล้ว",
-    "ทั้งครัวและบาร์ปิดแล้ว",
-    "ทั้งครัวและบาร์ยังเปิดอยู่"
-  ],
-
-  correct: 0
-},
+    correct: 3
+  },
 
 
   // =========================
-  // 17
+  // 16 — Restaurant
   // =========================
-
   {
-  spokenText:
-    "Would you mind keeping an eye on my bag while I use the restroom?",
+    spokenText:
+      "Take your time. There's no rush.",
 
-  maxPlays: 1,
+    maxPlays: 1,
 
-  answers: [
-    "ขอให้ช่วยเก็บกระเป๋าไว้",
-    "ขอให้ช่วยดูกระเป๋าให้แป๊บนึง",
-    "ขอให้ช่วยพาไปห้องน้ำ",
-    "ขอให้ช่วยถือกระเป๋าไปด้วย"
-  ],
+    answers: [
+      "Thanks, no rush then.",
+      "Okay, I'll finish as quickly as possible.",
+      "Should we order now?",
+      "Let's leave right now."
+    ],
 
-  correct: 0
-},
+    correct: 0
+  },
 
 
   // =========================
-  // 18
+  // 17 — Airport
   // =========================
-
   {
-  spokenText:
-    "It's on the house — no charge for the coffee today.",
+    spokenText:
+      "Boarding's already started, so we should head to the gate.",
 
-  maxPlays: 1,
+    maxPlays: 1,
 
-  answers: [
-    "กาแฟวันนี้ลดราคาครึ่งหนึ่ง",
-    "กาแฟวันนี้ฟรี ไม่คิดเงิน",
-    "กาแฟวันนี้ต้องจ่ายเพิ่ม",
-    "กาแฟวันนี้ขายไม่ได้แล้ว"
-  ],
+    answers: [
+      "The flight hasn't landed yet.",
+      "Let's grab a coffee first.",
+      "Okay, let's go.",
+      "I'll wait right here."
+    ],
 
-  correct: 1
-},
+    correct: 2
+  },
 
 
   // =========================
-  // 19
+  // 18 — Hotel
   // =========================
-
   {
-  spokenText:
-    "I hate to be a bother, but could we possibly get the check whenever you get a chance?",
+    spokenText:
+      "Your room isn't ready yet, but you're welcome to leave your bags with us.",
 
-  maxPlays: 1,
+    maxPlays: 1,
 
-  answers: [
-    "ขอความช่วยเหลือเรื่องอื่น",
-    "ขอยกเลิกออเดอร์",
-    "ขอบิล/เช็คบิลแบบไม่รีบ",
-    "ขอเปลี่ยนโต๊ะแบบไม่รีบ"
-  ],
+    answers: [
+      "I'll take my bags up now.",
+      "I don't need a room.",
+      "I'd like to check out.",
+      "Thanks, I'll leave them here."
+    ],
 
-  correct: 2
-},
-
+    correct: 3
+  },
 
 
   // =========================
-  // 20
+  // 19 — Restaurant (bill)
   // =========================
+  {
+    spokenText:
+      "Would you like separate checks, or should I just put it all on one?",
 
-   {
-  spokenText:
-    "Let's split the bill down the middle, shall we?",
+    maxPlays: 1,
 
-  maxPlays: 1,
+    answers: [
+      "I'd like a table for one.",
+      "One check is fine, we'll split it later.",
+      "Could we see the dessert menu?",
+      "I already paid at the counter."
+    ],
 
-  answers: [
-    "ให้อีกฝ่ายจ่ายทั้งหมด",
-    "หารเงินค่าอาหารกันคนละครึ่ง",
-    "ขอส่วนลดครึ่งราคา",
-    "ยกเลิกบิลทั้งหมด"
-  ],
+    correct: 1
+  },
 
-  correct: 1
-}
+
+  // =========================
+  // 20 — Travel / transport
+  // =========================
+  {
+    spokenText:
+      "If we don't leave now, we'll miss the last train.",
+
+    maxPlays: 1,
+
+    answers: [
+      "I don't usually take the train.",
+      "Let's wait a bit longer.",
+      "Then we'd better get moving.",
+      "The station's not far from here."
+    ],
+
+    correct: 2
+  }
   
 ];
 
