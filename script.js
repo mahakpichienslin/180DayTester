@@ -17,23 +17,20 @@ const questions = [
   // =========================
 
   {
-    spokenText:
-      "Could I have a cup of coffee, please?",
+  spokenText:
+    "Could I have a cup of coffee, please?",
 
-    audio:
-      "audio/q01.mp3",
+  maxPlays: 2,
 
-    maxPlays: 2,
+  answers: [
+    "ฉันขอกาแฟหนึ่งแก้วได้ไหม",
+    "ฉันขอชาหนึ่งแก้วได้ไหม",
+    "ฉันขอน้ำหนึ่งแก้วได้ไหม",
+    "ฉันขอนมหนึ่งแก้วได้ไหม"
+  ],
 
-    answers: [
-      "ฉันขอกาแฟหนึ่งแก้วได้ไหม",
-      "ฉันขอเมนูอาหารได้ไหม",
-      "ฉันต้องการจ่ายเงิน",
-      "ฉันกำลังมองหาร้านกาแฟ"
-    ],
-
-    correct: 0
-  },
+  correct: 0
+}
 
 
   // =========================
@@ -767,9 +764,72 @@ function loadQuestion() {
 }
 
 
+// ===========================================
+// TEXT TO SPEECH - ENGLISH US
+// ===========================================
+
+let currentSpeech = null;
+
+
+// เลือกเสียงภาษาอังกฤษ US
+function getUSVoice() {
+
+  const voices =
+    window.speechSynthesis.getVoices();
+
+
+  // ลองหาเสียง US ก่อน
+  let voice =
+    voices.find(v =>
+      v.lang === "en-US"
+    );
+
+
+  // ถ้าไม่มี en-US แบบตรงตัว
+  // ให้หาเสียงที่ขึ้นต้นด้วย en-US
+  if (!voice) {
+
+    voice =
+      voices.find(v =>
+        v.lang
+          .toLowerCase()
+          .startsWith("en-us")
+      );
+
+  }
+
+
+  // ถ้ายังไม่มี
+  // ใช้ English voice ตัวแรก
+  if (!voice) {
+
+    voice =
+      voices.find(v =>
+        v.lang
+          .toLowerCase()
+          .startsWith("en")
+      );
+
+  }
+
+
+  return voice;
+}
+
+
+
+// Browser บางตัวโหลด voices ช้า
+window.speechSynthesis.onvoiceschanged =
+  () => {
+
+    getUSVoice();
+
+  };
+
+
 
 // ===========================================
-// AUDIO
+// PLAY AUDIO BUTTON
 // ===========================================
 
 playAudioBtn.addEventListener(
@@ -788,40 +848,122 @@ playAudioBtn.addEventListener(
     }
 
 
-    const audio =
-      new Audio(question.audio);
+    // หยุดเสียงเดิมก่อน
+    window.speechSynthesis.cancel();
 
 
-    audio.play()
-      .catch(error => {
-
-        console.error(
-          "ไม่พบไฟล์เสียง:",
-          question.audio,
-          error
-        );
-
-      });
+    const speech =
+      new SpeechSynthesisUtterance(
+        question.spokenText
+      );
 
 
-    playsUsed++;
+    // ภาษาอังกฤษ US
+    speech.lang =
+      "en-US";
 
 
-    const remaining =
-      question.maxPlays -
-      playsUsed;
+    const voice =
+      getUSVoice();
 
 
-    listenCount.textContent =
-      `ฟังได้อีก ${remaining} ครั้ง`;
+    if (voice) {
 
-
-    if (remaining <= 0) {
-
-      playAudioBtn.disabled =
-        true;
+      speech.voice =
+        voice;
 
     }
+
+
+    // =====================================
+    // SPEED BY QUESTION LEVEL
+    // =====================================
+
+    if (currentQuestion <= 6) {
+
+      // Q1-Q7
+      speech.rate = 0.92;
+
+    }
+
+    else if (currentQuestion <= 13) {
+
+      // Q8-Q14
+      speech.rate = 1.0;
+
+    }
+
+    else {
+
+      // Q15-Q20
+      speech.rate = 1.05;
+
+    }
+
+
+    speech.pitch = 1;
+
+    speech.volume = 1;
+
+
+    currentSpeech =
+      speech;
+
+
+    // ปิดปุ่มระหว่างกำลังพูด
+    playAudioBtn.disabled =
+      true;
+
+
+    speech.onend = () => {
+
+      playsUsed++;
+
+
+      const remaining =
+        question.maxPlays -
+        playsUsed;
+
+
+      listenCount.textContent =
+        `ฟังได้อีก ${remaining} ครั้ง`;
+
+
+      if (remaining > 0) {
+
+        playAudioBtn.disabled =
+          false;
+
+      }
+
+      else {
+
+        playAudioBtn.disabled =
+          true;
+
+      }
+
+    };
+
+
+    speech.onerror =
+      event => {
+
+        console.error(
+          "Speech synthesis error:",
+          event
+        );
+
+
+        playAudioBtn.disabled =
+          false;
+
+      };
+
+
+    window.speechSynthesis.speak(
+      speech
+    );
 
   }
 );
