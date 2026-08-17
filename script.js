@@ -944,18 +944,95 @@ document
   .getElementById("submitBtn")
   .addEventListener(
     "click",
-    () => {
+    async () => {
 
-      console.log(result);
+      const result = {
 
-      localStorage.setItem(
-        "180DayTestResult",
-        JSON.stringify(result)
-      );
+        name: tester.name,
 
-      showScreen(
-        thankYouScreen
-      );
+        instagram: tester.instagram,
+
+        score: score,
+
+        answers: testAnswers.map(
+          answer =>
+            answer.isCorrect
+              ? 1
+              : 0
+        ),
+
+        listenCount: testAnswers.reduce(
+          (total, answer) =>
+            total +
+            answer.playsUsed,
+          0
+        )
+
+      };
+
+
+      const submitButton =
+        document.getElementById(
+          "submitBtn"
+        );
+
+
+      submitButton.disabled =
+        true;
+
+      submitButton.textContent =
+        "กำลังส่งข้อมูล...";
+
+
+      try {
+
+        await fetch(
+          "https://script.google.com/macros/s/AKfycbzowvMOr6hB_9xFpRiiXU101h5eOHoR1Ox6bvu0j0uxSflzhBUwUPQKuYBmXs6MP3XP/exec",
+          {
+
+            method: "POST",
+
+            mode: "no-cors",
+
+            headers: {
+              "Content-Type":
+                "text/plain;charset=utf-8"
+            },
+
+            body:
+              JSON.stringify(result)
+
+          }
+        );
+
+
+        localStorage.setItem(
+          "180DayTestResult",
+          JSON.stringify(result)
+        );
+
+
+        showScreen(
+          thankYouScreen
+        );
+
+      }
+
+      catch (error) {
+
+        console.error(error);
+
+        alert(
+          "ไม่สามารถส่งข้อมูลได้"
+        );
+
+        submitButton.disabled =
+          false;
+
+        submitButton.textContent =
+          "ส่งแบบทดสอบ";
+
+      }
 
     }
   );
