@@ -946,28 +946,19 @@ document
     "click",
     () => {
 
-      const result = {
+      console.log(result);
 
-        name:
-          tester.name,
+      localStorage.setItem(
+        "180DayTestResult",
+        JSON.stringify(result)
+      );
 
-        instagram:
-          tester.instagram,
+      showScreen(
+        thankYouScreen
+      );
 
-        score:
-          score,
-
-        total:
-          questions.length,
-
-        answers:
-          testAnswers,
-
-        submittedAt:
-          new Date()
-            .toISOString()
-
-      };
+    }
+  );
 
 
       // =====================================
